@@ -8,35 +8,28 @@
 
 #name { font-size : 26px; font-weight: bold; margin-bottom : 30px; border-bottom : 1px solid #000; width : 100%; }
 
-#description, #shoutout { margin-bottom : 30px; font-size : 20px; }
+#description { margin-bottom : 30px; font-size : 20px; }
 
-blockquote {
-    background: #f9f9f9;
-    /*border-left: 10px solid #ccc;*/
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    content:"\201C";
+#shoutout { margin : 20px auto; }
 
+ blockquote {
+    quotes:"\201C" "\201D";
+    margin : 40px 40px !important;
+    background-color : #FFE396;
+    border-left : 0px !important;
+    box-shadow : 0px 0px 20px #888;
+}
+blockquote:before, blockquote:after {
+    font:bold 65px/1px Helvetica;
+    color:#000;
+    position:absolute;
 }
 blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
+    content:open-quote;
+    margin:5px 25px 0 -25px;
+
 }
 blockquote:after {
-     color: #ccc;
-     content: open-quote;
-     font-size: 4em;
-     line-height: 0.1em;
-     margin-right: 0.25em;
-     vertical-align: -0.4em;
-    content:"\201D";
-
-
-}
-blockquote p {
-    display: inline;
+    content:close-quote;
+    margin:51px 0px 0px 0px;
 }
