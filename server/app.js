@@ -27,4 +27,10 @@ app.get('/data.json', function(req, res, next) {
     res.sendFile(path.join(__dirname,'public/assets/data.json'));
 });
 
+app.get('/favicon.ico', function(req, res, next) {
+    res.sendFile(path.join(__dirname,'public/views/favicon.ico'));
+});
+
+
+
 //module.exports = router;
